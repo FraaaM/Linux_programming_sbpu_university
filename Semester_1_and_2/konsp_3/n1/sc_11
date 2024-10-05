@@ -1,0 +1,7 @@
+#!/bin/bash
+
+case $1 in
+	*.docx) libreoffice $1 ;;
+	*.jpg) gimp $1 ;;
+	*.ogv) mpv $1 ;;
+esac

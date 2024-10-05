@@ -1,0 +1,12 @@
+#!/bin/bash
+
+n=1
+while test "$1"
+do
+	bash script_1 $1 $n &
+	n=$((n+1))
+	shift
+done
+
+echo $n
+wait -n	

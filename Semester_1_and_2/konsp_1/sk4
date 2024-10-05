@@ -1,0 +1,8 @@
+#!/bin/bash
+
+sudo find . -name "*jpg" | while read filename
+do
+	bash script_1  $filename &
+
+done
+# амперсант помогает вайл не ждать пока закончиться работа скрипта1 и запускает их пораленьно

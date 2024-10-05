@@ -1,0 +1,7 @@
+
+<property>
+  <name>dfs.namenode.name.dir</name>
+  <value>/var/hdfs/name</value>
+</property>
+
+

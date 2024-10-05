@@ -1,0 +1,9 @@
+
+g++ -o fast sha1_benchmark.cc sha1.cc -O3    быстрo
+g++ -o lazy sha1_benchmark.cc sha1.cc        медленo 
+
+
+время
+time ./fast  
+time ./lazy
+stroka 2) Эта команда компилирует исходные файлы sha1_benchmark.cc и sha1.cc в исполняемый файл с именем "first" с использованием оптимизации уровня 3. Опция -o указывает имя выходного файла, а -O3 указывает уровень оптимизации.

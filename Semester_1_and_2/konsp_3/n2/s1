@@ -1,0 +1,25 @@
+
+#!/bin/bash
+
+#-x 59.9386 -y 30.3141
+
+while getopts "x:y:" opt; do
+  case $opt in
+    x)
+      latitude=$OPTARG
+      ;;
+    y)
+      longitude=$OPTARG
+      ;;
+    \?)
+      echo "Неверная опция: -$OPTARG" >&2
+      exit 1
+      ;;
+  esac
+done
+
+echo "Погода в точке с координатами ($longitude, $latitude):"
+curl wttr.in/$latitude,$longitude
+
+
+

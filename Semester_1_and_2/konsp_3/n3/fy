@@ -1,0 +1,15 @@
+
+#!/bin/bash
+
+my_func () {
+    outf=$1
+    shift
+    command="$@"
+
+    $command > $outf 2>&1
+}
+
+# Пример вызова функци
+my_func $@ 
+#bash fy "out.txt" ls -l
+

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+convert $1 $2.png
+echo $2

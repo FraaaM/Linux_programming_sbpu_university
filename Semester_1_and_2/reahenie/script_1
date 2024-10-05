@@ -1,0 +1,11 @@
+#!/bin/sh
+#convert sig11.jpeg f.png
+
+#for i in  $@
+#do
+#	echo convert i f.png
+#done
+for i in $*
+do
+	convert $i  $i.png
+done

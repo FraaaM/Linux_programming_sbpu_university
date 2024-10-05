@@ -1,0 +1,13 @@
+Компиляция 
+
+g++ 1.cc
+g++ -DUSE_FLOAT 1.cc
+g++ -DUSE_GPU -DUSE_FLOAT 1.cc
+g++ -DUSE_GPU 1.cc
+
+
+
+Запуск
+
+./v.out
+a

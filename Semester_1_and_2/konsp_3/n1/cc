@@ -1,0 +1,10 @@
+#!/bin/bash
+
+ff=$(file -b --mime-type $1)
+
+case  $ff in
+	image/*) gimp $1 ;;
+	"application/vnd.openxmlformats-officedocument.wordprocessingml.document") libreoffice $1 ;;
+	video/*) mpv $1 ;; 
+	*) echo "gg" ;;
+esac

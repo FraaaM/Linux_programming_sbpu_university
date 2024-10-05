@@ -1,0 +1,9 @@
+#sudo find /sys -name "temp*input"
+#!/bin/sh
+#convert sig11.jpeg f.png
+
+for i in  $*
+do
+	convert i f.png
+done
+

@@ -1,0 +1,5 @@
+итого 8
+-rw-rw-r-- 1 fram fram 175 окт 20 15:43 fy
+-rw-rw-r-- 1 fram fram   0 окт 19 22:34 -l
+-rw-rw-r-- 1 fram fram   0 окт 20 15:44 out.txt
+-rw-rw-r-- 1 fram fram 178 окт 19 22:21 tew

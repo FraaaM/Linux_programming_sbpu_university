@@ -1,0 +1,6 @@
+#!/bin/bash
+
+n=1
+sudo find /home/fram/vsescri -name "*.jpg" | xargs convert *.png
+#xargs - это массив в которые записываются все названия файлов в папке vsescri оканчивающиеся на .jpg, затем все эти файлы конвертиируюися в png
+

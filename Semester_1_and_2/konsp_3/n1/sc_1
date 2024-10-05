@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Получаем тип файла с помощью команды file и сохраняем его в переменную
+filetype=$(file -b --mime-type $1)
+
+# Проверяем тип файла и выполняем соответствуу
+case $filetype in
+    image/*)
+        gimp $1 ;;
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
+        libreoffice $1 ;;
+    video/*)
+        mpv $1 ;;
+    *)
+        echo "Невозможно открыть файл в подходящей программе" ;;
+esac
+
