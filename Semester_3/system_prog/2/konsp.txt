@@ -1,0 +1,5 @@
+daemon.py
+htop
+cp - копирование
+daemon.service
+
